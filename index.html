@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=7">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="freeCodeCamp build a survey form">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <form id="survey-form" action="" method="post">
+
+            <!-- Form Name Section START -->
+            <div>
+                <label for="name" id="name-label">Enter your name:</label>
+                <input id="name" type="text" name="name" placeholder="Your name" required>
+            </div>
+            <!-- Form Name Section END -->
+
+            <!-- Form Email Section START -->
+            <div>
+                <label for="email" id="email-label">Enter your email:</label>
+                <input id="email" type="email" name="email" placeholder="Your email" required>
+            </div>
+            <!-- Form Email Section END -->
+
+            <!-- Form Age Section START -->
+            <div>
+                <label for="number" id="number-label">Enter your age:</label>
+                <input id="number" type="number" name="number" min="1" max="80" placeholder="Your age">
+            </div>
+            <!-- Form Age Section END -->
+
+            <!-- Form Gender Section START -->
+            <div>
+                <select id="dropdown" name="dropdown">
+                    <option value="0">Male</option>
+                    <option value="1">Female</option>
+                </select>
+            </div>
+            <!-- Form Gender Section END -->
+            
+            <!-- Form Account Type Section START -->
+            <div>
+                <div>
+                    <label for="account-type">Basic Account</label>
+                    <input type="radio" name="account-type" value="0">
+                </div>
+                <div>
+                    <label for="account-type">Premium account</label>
+                    <input type="radio" name="account-type" value="1">
+                </div>
+            </div>
+            <!-- Form Account Type Section END -->
+
+            <!-- Form Textarea Section START  -->
+            <label for="reason-for-coding">Let us know why you like coding?</label>
+            <textarea id="reason-for-coding" name="reason-for-coding" cols="30" rows="10"></textarea>
+            <!-- Form Textarea Section END  -->
+
+            <!-- Form Terms and Conditions Section START -->
+            <div>
+                <label for="terms-and-conditions">I agree to the terms and conditions</label>
+                <input id="terms-and-conditions" type="checkbox" name="terms-and-conditions" value="0">
+            </div>
+            <!-- Form Terms and Conditions Section  -->
+
+
+            <!-- Form E-mail Promotions Section START -->
+            <div>
+                <label for="email-updates">I want to recieve E-mail updates and promotions</label>
+                <input id="email-updates" type="checkbox" name="email-updates" value="0">
+            </div>
+            <!-- Form E-mail Promotions Section END -->
+
+            <!-- Form Submit Section START -->
+            <div>
+                <input id="submit" type="submit" value="Create Account">
+            </div>
+            <!-- Form Submit Section END -->
+
+        </form>
+    </body>
+</html>
